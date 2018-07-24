@@ -1,7 +1,10 @@
 import os
-import dj_database_url
+
+import environ
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+env = environ.Env(DEBUG=(bool, False),)
+environ.Env.read_env('{0}/../.env'.format(BASE_DIR))
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'secret')
 
@@ -58,7 +61,7 @@ WSGI_APPLICATION = 'politicoservicesapi.wsgi.application'
 
 DATABASES = {}
 if 'DATABASE_URL' in os.environ and not DEBUG:  # noqa: F821
-    DATABASES['default'] = dj_database_url.config()
+    DATABASES['default'] = env.db()
 else:
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.postgresql',

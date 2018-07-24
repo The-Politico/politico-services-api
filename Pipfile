@@ -15,8 +15,8 @@ pillow = "*"
 celery = "*"
 django-politico-oembed-service = "*"
 django-politico-token-service = "*"
-dj-database-url = "*"
 "psycopg2" = "*"
 django-storages = "*"
+django-environ = "*"
 
 [dev-packages]

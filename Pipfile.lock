@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "364523bb3d870144870bf668997e0e6b19e938d055bf3a2108b35ba3c0c4373d"
+            "sha256": "df601caed5e634ee638a4695487bd53111389dee9e39367c10e156640e62615f"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -179,14 +179,6 @@
             ],
             "version": "==2.3"
         },
-        "dj-database-url": {
-            "hashes": [
-                "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
-                "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"
-            ],
-            "index": "pypi",
-            "version": "==0.5.0"
-        },
         "django": {
             "hashes": [
                 "sha256:97886b8a13bbc33bfeba2ff133035d3eca014e2309dff2b6da0bdfc0b8656613",
@@ -194,6 +186,14 @@
             ],
             "index": "pypi",
             "version": "==2.0.7"
+        },
+        "django-environ": {
+            "hashes": [
+                "sha256:6c9d87660142608f63ec7d5ce5564c49b603ea8ff25da595fd6098f6dc82afde",
+                "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4"
+            ],
+            "index": "pypi",
+            "version": "==0.4.5"
         },
         "django-politico-oembed-service": {
             "hashes": [
