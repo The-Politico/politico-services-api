@@ -26,8 +26,8 @@ PROJECT_FILENAME = 'politicoservicesapi'
 # The name of the repository containing the source
 REPOSITORY_NAME = 'politico-services-api'
 
-PRODUCTION_SERVERS = ['URL HERE']
-STAGING_SERVERS = ['34.200.181.240']
+PRODUCTION_SERVERS = ['services.politicoapps.com']
+STAGING_SERVERS = ['staging.services.politicoapps.com']
 
 ##################################
 # GENERATED, LEAVE THIS STUFF
