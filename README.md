@@ -1,6 +1,6 @@
-# Django Project Template
+# Politico Services API
 
-This is a starter template for a Django project. Right now, it doesn't contain any Django. What it does give you is pre-baked server configuration with Terraform and Fabric.
+An API to handle multiple services endpoints.
 
 ## Usage
 
@@ -44,14 +44,14 @@ To configure for yourself, follow these steps:
 
 2. Initialize onespot and terraform.
 
-``` 
+```
     $ python setup.py develop
     $ onespot server init
 ```
 
 3. Launch the server.
 
-``` 
+```
     $ onespot server launch
 ```
 
