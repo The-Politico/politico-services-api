@@ -4,7 +4,7 @@ import environ
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 env = environ.Env(DEBUG=(bool, False),)
-environ.Env.read_env('{0}/../.env'.format(BASE_DIR))
+environ.Env.read_env('{0}/.env'.format(BASE_DIR))
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'secret')
 
