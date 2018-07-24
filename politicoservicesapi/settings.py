@@ -100,7 +100,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-MEDIA_ROOT = '/media/'
 
 ###########################
 # s3 image service settings
@@ -113,8 +112,8 @@ S3IMAGESERVICE_S3_UPLOAD_ROOT = 'interactives/uploads/image-service/'
 S3IMAGESERVICE_MEDIA_PATH = 'image-service/'
 S3IMAGESERVICE_AWS_REGION = 'us-east-2'
 
-S3IMAGESERVICE_AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-S3IMAGESERVICE_AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+S3IMAGESERVICE_AWS_ACCESS_KEY_ID = os.getenv('AWS_S3_ACCESS_KEY_ID')
+S3IMAGESERVICE_AWS_SECRET_ACCESS_KEY = os.getenv('AWS_S3_SECRET_ACCESS_KEY')
 S3IMAGESERVICE_AWS_S3_BUCKET = os.getenv('AWS_S3_PUBLISH_BUCKET')
 S3IMAGESERVICE_AWS_S3_STATIC_ROOT = os.getenv('AWS_S3_STATIC_ROOT')
 
