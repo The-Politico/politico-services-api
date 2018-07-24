@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+"fabric3" = "*"
+"jinja2" = "*"
+click = "*"
+"django-s3-image-service" = "*"
+djangorestframework = "*"
+"boto3" = "*"
+pillow = "*"
+celery = "*"
+django-politico-oembed-service = "*"
+django-politico-token-service = "*"
+dj-database-url = "*"
+"psycopg2" = "*"
+django-storages = "*"
+
+[dev-packages]

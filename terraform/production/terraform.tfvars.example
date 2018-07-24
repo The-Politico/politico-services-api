@@ -1,0 +1,7 @@
+public_ip = "YOUR ELASTIC IP"
+
+target = "production"
+
+server_size = "t2.micro"
+
+pem_path = "~/src/private-eye/politicoapps.com.pem"
