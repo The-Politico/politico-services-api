@@ -3,4 +3,3 @@
 pyenv global 3.6.4
 cd apps/politico-services-api
 python manage.py migrate
-python manage.py collectstatic --noinput
