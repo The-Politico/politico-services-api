@@ -9,7 +9,7 @@ To start your own project, follow these steps:
 1. Clone the repo into a new folder.
 
 ```
-    $ git clone https://github.com/The-Politico/django-politico-project-template.git <name-of-project>
+    $ git clone https://github.com/The-Politico/politico-services-api
 ```
 
 2. Install requirements and setup your shell.
@@ -18,16 +18,6 @@ To start your own project, follow these steps:
     $ pipenv install
     $ pipenv shell
 ```
-
-3. Fill out `server_config.py` with your project name and project URLs.
-
-4. Run the bootstrap command, which will start a Django project and fill out some files based on your server configuration.
-
-```
-    $ fab bootstrap
-```
-
-You should have a shiny new `manage.py` file in the root directory and a folder named whatever you set `PROJECT_FILENAME` to with your settings and all in there. Start developing!
 
 ## Servers
 
