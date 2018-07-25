@@ -101,7 +101,4 @@ resource "aws_instance" "politicoservicesapi" {
     source      = "./.env"
     destination = "/home/ubuntu/apps/politico-services-api/.env"
   }
-  # provisioner "remote-exec" {
-  #   script = "../scripts/postdeploy.sh"
-  # }
 }

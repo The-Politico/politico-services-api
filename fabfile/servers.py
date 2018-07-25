@@ -13,6 +13,8 @@ import server_config
 from fabric.api import cd, local, put, run, settings, sudo, task
 from fabric.state import env
 
+from . import django
+
 logging.basicConfig(format=server_config.LOG_FORMAT)
 logger = logging.getLogger(__name__)
 logger.setLevel(server_config.LOG_LEVEL)
@@ -28,14 +30,21 @@ def setup():
     Setup servers for deployment.
     """
     install_extra_requirements()
+    setup_django()
     setup_logs()
-    # setup_cert()
+    setup_cert()
     deploy_confs()
 
 
 @task
 def install_extra_requirements():
     run('pip install awscli')
+
+
+@task
+def setup_django():
+    django.management('migrate')
+    django.management('collectstatic --noinput')
 
 
 @task
@@ -141,7 +150,7 @@ def render_confs():
     context = copy.copy(server_config.__dict__)
     context['SERVERS'] = env.hosts
     if env.hosts[0].endswith('.com'):
-        context['SSL'] = False
+        context['SSL'] = True
     else:
         context['SSL'] = False
 
