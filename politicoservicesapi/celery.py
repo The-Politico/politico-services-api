@@ -8,7 +8,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'politicoservicesapi.settings')
 app = Celery('politicoservicesapi')
 app.config_from_object('django.conf:settings', namespace='CELERY')
 app.conf.update(
-    broker_url=os.getenv('REDIS_URL', '127.0.0.1:6379'),
+    broker_url=os.getenv('REDIS_URL', 'redis://127.0.0.1:6379'),
     task_serializer='json',
     timezone='America/New_York',
 )
