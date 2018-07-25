@@ -60,7 +60,7 @@ WSGI_APPLICATION = 'politicoservicesapi.wsgi.application'
 
 
 DATABASES = {}
-if 'DATABASE_URL' in os.environ and not DEBUG:  # noqa: F821
+if 'DATABASE_URL' in os.environ:  # noqa: F821
     DATABASES['default'] = env.db()
 else:
     DATABASES['default'] = {
