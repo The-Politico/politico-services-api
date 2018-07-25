@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'storages',
     's3imageservice',
@@ -29,6 +30,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -107,6 +110,17 @@ STATIC_URL = '/static/'
 WHITENOISE_STATIC_PREFIX = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'politicoservicesapi', 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+########
+# CORS #
+########
+if DEBUG:
+    CORS_ORIGIN_ALLOW_ALL = True
+else:
+    CORS_ORIGIN_WHITELIST = (
+        'localhost:8000',
+        'localhost:3000',
+    )
 
 ###########################
 # s3 image service settings
