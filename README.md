@@ -53,7 +53,13 @@ This will take a few minutes to create a server on AWS. If all goes well, you ca
     $ onespot server setup
 ```
 
-5. Check if your server works! Visit STAGING_URL.com/admin to check out the Django admin.
+5. Start the Celery worker
+
+```
+    $ fab [staging|production] servers.restart_service:celery
+```
+
+6. Check if your server works! Visit STAGING_URL.com/admin to check out the Django admin.
 
 ### Updating the server
 
@@ -83,4 +89,12 @@ If you make a change to a component app, then you'll need to do the following:
 
 ```
     $ onespot server update
+```
+
+### Running Management Commands
+
+You can run management commands on your server using fabric.
+
+```
+    $ fab [staging|production] django.management:[command]
 ```
