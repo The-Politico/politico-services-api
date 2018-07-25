@@ -1,9 +1,12 @@
 [[source]]
+
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
+
 [packages]
+
 django = "*"
 "fabric3" = "*"
 "jinja2" = "*"
@@ -18,5 +21,8 @@ django-politico-token-service = "*"
 "psycopg2" = "*"
 django-storages = "*"
 django-environ = "*"
+whitenoise = "*"
+
 
 [dev-packages]
+
