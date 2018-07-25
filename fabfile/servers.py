@@ -29,7 +29,7 @@ def setup():
     """
     install_extra_requirements()
     setup_logs()
-    setup_cert()
+    # setup_cert()
     deploy_confs()
 
 
@@ -141,9 +141,11 @@ def render_confs():
     context = copy.copy(server_config.__dict__)
     context['SERVERS'] = env.hosts
     if env.hosts[0].endswith('.com'):
-        context['SSL'] = True
+        context['SSL'] = False
     else:
         context['SSL'] = False
+
+    print(context)
 
     for service, remote_path, extension in server_config.SERVER_SERVICES:
         template_path = _get_template_conf_path(service, extension)

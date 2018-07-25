@@ -49,7 +49,7 @@ def server_setup(target):
     """
     Setup an existing server with Fabric
     """
-    run(['fab', target, 'deploy_server'])
+    run(['fab', target, 'servers.setup'])
 
 
 @server.command('update')
@@ -60,7 +60,7 @@ def server_update(target):
     """
     Update repo on server
     """
-    run(['fab', target, 'master', 'servers.checkout_latest'])
+    run(['fab', target, 'master', 'deploy_server'])
 
 
 @server.command('destroy')
