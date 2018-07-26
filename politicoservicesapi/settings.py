@@ -61,7 +61,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'politicoservicesapi.wsgi.application'
 
-SECURE_SSL_REDIRECT = True
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
 
 DATABASES = {}
 if 'DATABASE_URL' in os.environ:  # noqa: F821
