@@ -106,3 +106,15 @@ To tail the Celery Log ssh into the server and tail the following file.
     $ ssh ubuntu@url.com
     $ tail -f /var/log/politicoservicesapi/celery.log
 ```
+
+### Debgging
+
+Is the HTTPS certification not working? Try running:
+```
+    $ fab [staging|production] servers.setup_cert
+```
+
+Did you change the URL recently? You'll have to update the confs:
+```
+    $ fab [staging|production] servers.deploy_confs
+```
