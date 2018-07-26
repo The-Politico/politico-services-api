@@ -98,3 +98,11 @@ You can run management commands on your server using fabric.
 ```
     $ fab [staging|production] django.management:[command]
 ```
+
+### Logging
+
+To tail the Celery Log ssh into the server and tail the following file.
+```
+    $ ssh ubuntu@url.com
+    $ tail -f /var/log/politicoservicesapi/celery.log
+```
