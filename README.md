@@ -71,7 +71,7 @@ If you make a change to the Django project itself and need to update it on the s
 
 If you make a change to a component app, then you'll need to do the following:
 
-1. Update the requirement in your local env.
+1. Update the requirement in your local env. (If you're having weird caching issues with new versions not being found try running `export PIP_NO_CACHE_DIR=false`)
 
 ```
     $ pipenv install my-pluggable-app==0.1.0
