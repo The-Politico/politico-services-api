@@ -122,6 +122,7 @@ else:
         'localhost:8000',
         'localhost:3000',
         'the-politico.github.io',
+        'datalab.politico.com',
     )
 
 ###########################
