@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+django = "==2.0.7"
 "fabric3" = "*"
 "jinja2" = "*"
 click = "*"
-"django-s3-image-service" = "*"
+"django-s3-image-service" = "==0.0.5"
 djangorestframework = "*"
 "boto3" = "*"
 pillow = "*"

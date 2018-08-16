@@ -2,20 +2,20 @@ amqp==2.3.2
 asn1crypto==0.24.0
 bcrypt==3.1.4
 billiard==3.5.0.4
-boto3==1.7.64
-botocore==1.10.64
+boto3==1.7.78
+botocore==1.10.78
 celery==4.2.1
-certifi==2018.4.16
+certifi==2018.8.13
 cffi==1.11.5
 chardet==3.0.4
 click==6.7
-cryptography==2.3
+cryptography==2.3.1
 Django==2.0.7
 django-cors-headers==2.4.0
 django-environ==0.4.5
 django-politico-oembed-service==0.0.4
 django-politico-token-service==0.0.3
-django-s3-image-service==0.0.4
+django-s3-image-service==0.0.5
 django-storages==1.6.6
 djangorestframework==3.8.2
 docutils==0.14
@@ -29,7 +29,7 @@ MarkupSafe==1.0
 mccabe==0.6.1
 paramiko==2.4.1
 Pillow==5.2.0
--e git+git@github.com:The-Politico/politico-services-api.git@bdf2ade1d51729fd16d15c4263cee3695812061b#egg=politico_services_api
+-e git+git@github.com:The-Politico/politico-services-api.git@52243c60958326cfe3ae88edce30405d2f7dcafe#egg=politico_services_api
 psycopg2==2.7.5
 pyasn1==0.4.4
 pycodestyle==2.3.1
@@ -44,4 +44,4 @@ s3transfer==0.1.13
 six==1.11.0
 urllib3==1.23
 vine==1.1.4
-whitenoise==3.3.1
+whitenoise==4.0
