@@ -29,7 +29,6 @@ MarkupSafe==1.0
 mccabe==0.6.1
 paramiko==2.4.1
 Pillow==5.2.0
--e git+git@github.com:The-Politico/politico-services-api.git@52243c60958326cfe3ae88edce30405d2f7dcafe#egg=politico_services_api
 psycopg2==2.7.5
 pyasn1==0.4.4
 pycodestyle==2.3.1

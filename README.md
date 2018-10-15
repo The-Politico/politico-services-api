@@ -30,7 +30,7 @@ This template comes with plug-and-play Terraform configuration. In order to star
 
 To configure for yourself, follow these steps:
 
-1. In **both the `terraform/staging` and `terraform/production` folders**, fill out both `terraform.tfvars` and `.env`. These will be gitignored, so any secrets can go in here. The `.env` file will get placed onto the server you create.
+1. In **both the `terraform/staging` and `terraform/production` folders**, fill out both `terraform.tfvars` and `.env`. These will be gitignored, so any secrets can go in here. The `.env` file will get placed onto the server you create. In order to call onespot commands using the production config pass the `--target=production` argument to the command.
 
 2. Initialize onespot and terraform.
 
@@ -107,7 +107,7 @@ To tail the Celery Log ssh into the server and tail the following file.
     $ tail -f /var/log/politicoservicesapi/celery.log
 ```
 
-### Debgging
+### Debugging
 
 Is the HTTPS certification not working? Try running:
 ```

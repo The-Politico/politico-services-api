@@ -74,7 +74,7 @@ resource "aws_eip_association" "proxy_eip" {
 }
 
 resource "aws_instance" "politicoservicesapi" {
-  ami           = "ami-3348294c"
+  ami           = "ami-7d030c02"
   instance_type = "${var.server_size}"
   subnet_id     = "subnet-1792345f"
   key_name      = "politicoapps.com"
